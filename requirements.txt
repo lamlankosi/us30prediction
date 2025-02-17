@@ -1,1 +1,7 @@
-gunicorn
+numpy==1.26.4
+pandas==2.2.3
+MetaTrader5==5.0.47
+ta-lib==0.4.24
+scikit-learn==1.4.0
+matplotlib==3.8.0
+logging==0.4.9.6
