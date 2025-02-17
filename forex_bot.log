@@ -77,3 +77,345 @@
 2025-02-15 22:26:39,505 - INFO - Generated signal: buy
 2025-02-15 22:26:39,506 - ERROR - Error placing order: 'NoneType' object has no attribute 'retcode'
 2025-02-15 22:26:39,506 - INFO - Placed a buy order.
+2025-02-16 21:47:48,125 - INFO - Forex trading bot started.
+2025-02-16 21:47:48,151 - INFO - Generated signal: buy
+2025-02-16 21:47:48,152 - ERROR - Error placing order: 'NoneType' object has no attribute 'retcode'
+2025-02-16 21:47:48,152 - INFO - Placed a buy order.
+2025-02-16 22:00:20,307 - INFO - Forex trading bot started.
+2025-02-16 22:00:20,311 - INFO - Generated signal: buy
+2025-02-16 22:00:20,311 - ERROR - Error placing order: 'NoneType' object has no attribute 'retcode'
+2025-02-16 22:00:20,312 - INFO - Placed a buy order.
+2025-02-16 22:08:30,913 - INFO - Trading bot started.
+2025-02-16 22:08:30,917 - INFO - Generated signal: buy
+2025-02-16 22:08:30,920 - INFO - Symbol info: SymbolInfo(custom=False, chart_mode=0, select=True, visible=True, session_deals=0, session_buy_orders=0, session_sell_orders=0, volume=0, volumehigh=0, volumelow=0, time=1739566798, digits=1, spread=26, spread_float=True, ticks_bookdepth=0, trade_calc_mode=2, trade_mode=4, start_time=0, expiration_time=0, trade_stops_level=0, trade_freeze_level=0, trade_exemode=2, swap_mode=1, swap_rollover3days=5, margin_hedged_use_leg=False, expiration_mode=15, filling_mode=3, order_mode=127, order_gtc_mode=0, option_mode=0, option_right=0, bid=44548.3, bidhigh=44789.2, bidlow=44501.1, ask=44550.9, askhigh=44791.9, asklow=44503.7, last=0.0, lasthigh=0.0, lastlow=0.0, volume_real=0.0, volumehigh_real=0.0, volumelow_real=0.0, option_strike=0.0, point=0.1, trade_tick_value=0.0, trade_tick_value_profit=0.0, trade_tick_value_loss=0.0, trade_tick_size=0.1, trade_contract_size=1.0, trade_accrued_interest=0.0, trade_face_value=0.0, trade_liquidity_rate=0.0, volume_min=0.01, volume_max=500.0, volume_step=0.01, volume_limit=0.0, swap_long=-88.9, swap_short=0.0, margin_initial=0.0, margin_maintenance=0.0, session_volume=0.0, session_turnover=0.0, session_interest=0.0, session_buy_orders_volume=0.0, session_sell_orders_volume=0.0, session_open=44743.2, session_close=44742.2, session_aw=0.0, session_price_settlement=0.0, session_price_limit_min=0.0, session_price_limit_max=0.0, margin_hedged=0.0, price_change=-0.4334, price_volatility=0.0, price_theoretical=0.0, price_greeks_delta=0.0, price_greeks_theta=0.0, price_greeks_gamma=0.0, price_greeks_vega=0.0, price_greeks_rho=0.0, price_greeks_omega=0.0, price_sensitivity=0.0, basis='', category='Indices', currency_base='USD', currency_profit='USD', currency_margin='USD', bank='', description='US Wall Street 30 Index', exchange='', formula='', isin='', name='US30m', page='', path='Standard\\Indices\\US30m')
+2025-02-16 22:08:30,920 - INFO - Tick data: Tick(time=1739566798, bid=44548.3, ask=44550.9, last=0.0, volume=0, time_msc=1739566798990, flags=6, volume_real=0.0)
+2025-02-16 22:08:30,920 - INFO - Order request: {'action': 1, 'symbol': 'US30m', 'volume': 1.0, 'type': 0, 'price': 44550.9, 'sl': 33000, 'tp': 34000, 'deviation': 10, 'magic': 234000, 'comment': 'Python script open', 'type_time': 0, 'type_filling': 1}
+2025-02-16 22:08:30,921 - ERROR - Failed to send order. Last error: (-2, 'Invalid "sl" argument')
+2025-02-16 22:08:30,921 - INFO - Placed a buy order.
+2025-02-16 22:10:23,074 - ERROR - Failed to log in to account #208543245
+2025-02-16 22:10:43,743 - INFO - Forex trading bot started.
+2025-02-16 22:10:43,746 - INFO - Generated signal: buy
+2025-02-16 22:10:43,746 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss_distance'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss_distance=100, take_profit_distance=100)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss_distance'
+2025-02-16 22:11:43,755 - INFO - Generated signal: buy
+2025-02-16 22:11:43,757 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss_distance'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss_distance=100, take_profit_distance=100)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss_distance'
+2025-02-16 22:12:43,762 - INFO - Generated signal: buy
+2025-02-16 22:12:43,762 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss_distance'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss_distance=100, take_profit_distance=100)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss_distance'
+2025-02-16 22:13:43,769 - INFO - Generated signal: buy
+2025-02-16 22:13:43,770 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss_distance'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss_distance'
+2025-02-16 22:13:53,211 - INFO - Forex trading bot started.
+2025-02-16 22:13:53,215 - INFO - Generated signal: buy
+2025-02-16 22:13:53,215 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:14:53,222 - INFO - Generated signal: buy
+2025-02-16 22:14:53,223 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:15:53,233 - INFO - Generated signal: buy
+2025-02-16 22:15:53,234 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:16:53,244 - INFO - Generated signal: buy
+2025-02-16 22:16:53,245 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:17:53,250 - INFO - Generated signal: buy
+2025-02-16 22:17:53,251 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:18:53,258 - INFO - Generated signal: buy
+2025-02-16 22:18:53,259 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:19:53,267 - INFO - Generated signal: buy
+2025-02-16 22:19:53,268 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:20:53,275 - INFO - Generated signal: buy
+2025-02-16 22:20:53,277 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:21:53,283 - INFO - Generated signal: buy
+2025-02-16 22:21:53,283 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:22:53,288 - INFO - Generated signal: buy
+2025-02-16 22:22:53,289 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:23:53,296 - INFO - Generated signal: buy
+2025-02-16 22:23:53,297 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-16 22:24:53,302 - INFO - Generated signal: buy
+2025-02-16 22:24:53,302 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:46:54,122 - INFO - Forex trading bot started.
+2025-02-17 17:46:54,180 - INFO - Generated signal: buy
+2025-02-17 17:46:54,181 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 40, in main
+    broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:47:54,215 - INFO - Generated signal: sell
+2025-02-17 17:47:54,215 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:48:54,223 - INFO - Generated signal: sell
+2025-02-17 17:48:54,224 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:49:54,300 - INFO - Generated signal: sell
+2025-02-17 17:49:54,301 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:50:54,313 - INFO - Generated signal: sell
+2025-02-17 17:50:54,314 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:51:54,322 - INFO - Generated signal: sell
+2025-02-17 17:51:54,323 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:52:54,332 - INFO - Generated signal: sell
+2025-02-17 17:52:54,332 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:53:54,340 - INFO - Generated signal: sell
+2025-02-17 17:53:54,341 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:54:54,348 - INFO - Generated signal: sell
+2025-02-17 17:54:54,350 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:55:54,357 - INFO - Generated signal: sell
+2025-02-17 17:55:54,357 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:56:54,367 - INFO - Generated signal: sell
+2025-02-17 17:56:54,368 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:57:54,376 - INFO - Generated signal: sell
+2025-02-17 17:57:54,377 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:58:54,386 - INFO - Generated signal: sell
+2025-02-17 17:58:54,387 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 17:59:54,394 - INFO - Generated signal: sell
+2025-02-17 17:59:54,395 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:00:54,404 - INFO - Generated signal: sell
+2025-02-17 18:00:54,405 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:01:54,413 - INFO - Generated signal: sell
+2025-02-17 18:01:54,414 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:02:54,422 - INFO - Generated signal: sell
+2025-02-17 18:02:54,423 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:03:54,433 - INFO - Generated signal: sell
+2025-02-17 18:03:54,434 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:04:54,448 - INFO - Generated signal: sell
+2025-02-17 18:04:54,450 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:05:54,462 - INFO - Generated signal: sell
+2025-02-17 18:05:54,463 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:06:54,476 - INFO - Generated signal: sell
+2025-02-17 18:06:54,477 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:07:54,487 - INFO - Generated signal: sell
+2025-02-17 18:07:54,488 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:08:54,502 - INFO - Generated signal: sell
+2025-02-17 18:08:54,503 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:09:54,513 - INFO - Generated signal: sell
+2025-02-17 18:09:54,514 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:10:54,526 - INFO - Generated signal: sell
+2025-02-17 18:10:54,528 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:11:54,540 - INFO - Generated signal: sell
+2025-02-17 18:11:54,541 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:12:54,555 - INFO - Generated signal: sell
+2025-02-17 18:12:54,558 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:13:54,573 - INFO - Generated signal: sell
+2025-02-17 18:13:54,574 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:14:54,586 - INFO - Generated signal: sell
+2025-02-17 18:14:54,587 - ERROR - An error occurred: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+Traceback (most recent call last):
+  File "C:\Users\Lyzor\Documents\python_workshop\us30_prediction\main.py", line 43, in main
+    broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BrokerAPI.place_order() got an unexpected keyword argument 'stop_loss'
+2025-02-17 18:15:48,513 - INFO - Forex trading bot started.
+2025-02-17 18:16:49,824 - INFO - Generated signal: {'action': 'sell', 'price': np.float64(44641.4), 'stop_loss': np.float64(44741.4), 'take_profit': np.float64(44441.4), 'position_size': 0.051271000000000004}
+2025-02-17 18:24:26,834 - INFO - Forex trading bot started.
+2025-02-17 18:24:42,248 - INFO - Generated signal: {'action': 'sell', 'price': np.float64(44650.9), 'stop_loss': np.float64(44750.9), 'take_profit': np.float64(44450.9), 'position_size': 0.04, 'timeframe': '1h'}
+2025-02-17 18:35:23,684 - INFO - Forex trading bot started.
+2025-02-17 18:35:33,429 - INFO - Generated signal: {'action': 'sell', 'price': np.float64(44654.0), 'stop_loss': np.float64(44754.0), 'take_profit': np.float64(44454.0), 'position_size': 0.03, 'timeframe': '1m'}
+2025-02-17 18:38:05,317 - INFO - Forex trading bot started.
+2025-02-17 18:38:13,251 - INFO - Generated signal: {'action': 'sell', 'price': np.float64(44655.4), 'stop_loss': np.float64(44755.4), 'take_profit': np.float64(44455.4), 'position_size': 0.02, 'timeframe': '1h'}

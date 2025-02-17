@@ -16,16 +16,20 @@ logging.basicConfig(
 )
 
 # Initialize broker API and trading strategy
-# main.py
 broker = BrokerAPI(account=208543245, password="@Lamlankosi7", server="Exness-MT5Trial9")
-strategy = TradingStrategy(short_window=10, long_window=50)
+strategy = TradingStrategy(short_window=10, long_window=50, risk_per_trade=0.01)
 
 def main():
     logging.info("Forex trading bot started.")
+
+    # Input account balance and timeframe
+    balance = float(input("Enter your account balance: "))
+    timeframe = input("Enter the timeframe (e.g., 1M, 1h, 1D): ")
+
     while True:
         try:
-            # Fetch market data
-            data = broker.get_market_data("US30m", "1h")
+            # Fetch market data for the specified timeframe
+            data = broker.get_market_data("US30m", timeframe)
             if data is None:
                 logging.warning("No market data received. Retrying...")
                 time.sleep(60)
@@ -33,19 +37,20 @@ def main():
 
             # Analyze data and generate signal
             analyzed_data = strategy.analyze(data)
-            signal = strategy.generate_signal(analyzed_data)
+            signal = strategy.generate_signal(analyzed_data, balance, timeframe)
+
+            # Log the signal
             logging.info(f"Generated signal: {signal}")
 
-            # Execute trade based on signal
-            if signal == "buy":
-                broker.place_order("US30m", "buy", 1.0, stop_loss=33000, take_profit=34000)
-                logging.info("Placed a buy order.")
-            elif signal == "sell":
-                broker.place_order("US30m", "sell", 1.0, stop_loss=34000, take_profit=33000)
-                logging.info("Placed a sell order.")
-
             # Wait before next iteration
-            time.sleep(3600)  # Sleep for 1 hour
+            if timeframe == "1M":
+                time.sleep(60)  # Sleep for 1 minute
+            elif timeframe == "1h":
+                time.sleep(3600)  # Sleep for 1 hour
+            elif timeframe == "1D":
+                time.sleep(86400)  # Sleep for 1 day
+            else:
+                time.sleep(3600)  # Default sleep for 1 hour
         except Exception as e:
             logging.error(f"An error occurred: {e}", exc_info=True)
             time.sleep(60)  # Wait before retrying
